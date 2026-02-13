@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <header id="header">
+        <h1>PEDRA PAPEL TESOURA</h1>
+    </header>
+    <div class="container">
+        <div class="preview">
+            <div id="computer-side">
+                <img class="choice pixel reverse idle" id="computer-choice" src="assets/images/pedra.png" />
+            </div>
+            <div id="player-side">
+                <img class="choice pixel idle" id="player-choice" src="assets/images/pedra.png" />
+            </div>
+        </div>
+        <div id="player-options">
+            <button class="pixel player-option" id="pedra" value="pedra">
+                <img class="pixel player-option-img" src="assets/images/pedra.png">
+            </button>
+            <button class="pixel player-option" id="papel" value="papel">
+                <img class="pixel player-option-img" src="assets/images/papel.png">
+            </button>
+            <button class="pixel player-option" id="tesoura" value="tesoura">
+                <img class="pixel player-option-img" src="assets/images/tesoura.png">
+            </button>
+        </div>
+    </div>
+    <footer id="footer">
+        <span id="copyright"></span>
+        <a href="https://github.com/BrauUu" target="_blank">
+            <img src="assets/images/github.png" />
+        </a>
+    </footer>
+    <div id="result" class="none"></div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
