@@ -30,6 +30,7 @@ body {
 
     overflow-y: scroll;
     text-shadow: 3px 3px 1px var(--green);
+    text-align: center;
 }
 
 #header {
@@ -143,6 +144,13 @@ body {
 
 .none {
     display: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+        gap: 0
+    }
 }
 
 @keyframes idleanimation {
